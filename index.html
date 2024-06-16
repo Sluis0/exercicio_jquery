@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>To-Do</h1>
+    </header>
+    <section>
+        <h2 id="titulo-inicial">Organize suas Tarefas</h2>
+        <form>
+            <ul>
+                <li class="new-to-do">
+                    <label for="nova-tarefa" title="Nova Tarefa">Nova Tarefa:</label>
+                    <input type="text" id="nova-tarefa" required placeholder="Ex: Lavar o carro" name="Nova Tarefa">
+                </li>
+                <li class="date-prior">
+                    <label for="date">Data:</label>
+                    <input type="date" id="date">
+                    <label for="prioridade">Prioridade:</label>
+                    <select id="prioridade">
+                        <option value="Baixa">Baixa</option>
+                        <option value="Moderada">Moderada</option>
+                        <option value="Alta">Alta</option>
+                    </select>
+                </li>
+                <li>
+                    <textarea id="detalhes" placeholder="Detalhes (Opcional)"></textarea>
+                </li>
+            </ul>
+            <button type="button" title="Adicionar" id="botao-adicionar">Adicionar</button>
+        </form>
+    </section>
+    <section id="lista-tarefas">
+        <div id="tarefas-adicionadas">
+            <ul>
+                <!-- As tarefas serão adicionadas dinamicamente aqui -->
+            </ul>
+        </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

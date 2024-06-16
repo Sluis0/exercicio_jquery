@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #153448;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: #DFD0B8;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+#titulo-inicial{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+li {
+    text-decoration: none;
+}
+
+#botao-adicionar{
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: #3C5B6F;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/*-------------------------------------------class="new-to-do"------------------------------------------------------*/
+
+
+.new-to-do{
+    display: inline-flex;
+    white-space: nowrap;
+    gap: 10px;
+    width: 100%;
+}
+
+
+/*------------------------------------------class="date-prior"-------------------------------------------------------*/
+
+.date-prior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* Adiciona um espaço entre os elementos */
+}
+
+.date-prior label {
+    width: auto;
+    margin-bottom: 10px;
+}
+.date-prior input, 
+.date-prior select{
+    min-width: 150px;
+}
+
+@media (max-width: 450px) {
+    .date-prior {
+        flex-direction: column; /* Altera a direção dos itens para coluna em resoluções menores */
+        align-items: flex-start; /* Alinha os itens ao início para manter o formato */
+        gap: 0;
+    }
+
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+form input,
+form button,
+form select,
+form textarea {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+
+#lista-tarefas {
+    display: none;
+}
+
+#tarefas-adicionadas{
+    align-items: center;
+    margin: 0 auto;
+    background-color: #DFD0B8;
+    margin-top: 10px;
+    padding: 10px;
+    max-width: 600px;
+}
+
+#nome-tarefa {
+    background: none;
+    border: none;
+    resize: none;
+    height: 16px;
+    width: 200px;
+    padding: 1px 8px 0 8px;
+}
+
+
+.botoes button{
+    padding: 5px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 288px;
+}
+
+#botao-concluir {
+    background-color: green;
+}
+
+#botao-deletar{
+    background-color: red;
+}
+
+.concluida {
+    text-decoration: line-through; /* Riscado */
+    opacity: 0.6;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+body {
+    background-color: #3C5B6F;
+}
